@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6552B49721B0C69F0026EFD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552B49621B0C69F0026EFD5 /* AppDelegate.m */; };
+		6552B49A21B0C69F0026EFD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552B49921B0C69F0026EFD5 /* ViewController.m */; };
+		6552B49D21B0C69F0026EFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6552B49B21B0C69F0026EFD5 /* Main.storyboard */; };
+		6552B49F21B0C6A00026EFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6552B49E21B0C6A00026EFD5 /* Assets.xcassets */; };
+		6552B4A221B0C6A00026EFD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6552B4A021B0C6A00026EFD5 /* LaunchScreen.storyboard */; };
+		6552B4A521B0C6A00026EFD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552B4A421B0C6A00026EFD5 /* main.m */; };
+		6552B4AF21B0C6A00026EFD5 /* RsaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552B4AE21B0C6A00026EFD5 /* RsaDemoTests.m */; };
+		6552B4BA21B0C6A00026EFD5 /* RsaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552B4B921B0C6A00026EFD5 /* RsaDemoUITests.m */; };
+		6552B4CA21B0CEFE0026EFD5 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552B4C921B0CEFE0026EFD5 /* RSACryptor.m */; };
+		6552B4CD21B0CF8B0026EFD5 /* RSACryptor.h in Resources */ = {isa = PBXBuildFile; fileRef = 6552B4C821B0CEFE0026EFD5 /* RSACryptor.h */; };
+		6552B4CE21B0CF8B0026EFD5 /* RSACryptor.m in Resources */ = {isa = PBXBuildFile; fileRef = 6552B4C921B0CEFE0026EFD5 /* RSACryptor.m */; };
+		6552B4CF21B0D08D0026EFD5 /* reqTeeMo.der in Resources */ = {isa = PBXBuildFile; fileRef = 6552B4CC21B0CF0C0026EFD5 /* reqTeeMo.der */; };
+		6552B4D021B0D08D0026EFD5 /* TeeMo.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 6552B4CB21B0CF0C0026EFD5 /* TeeMo.p12 */; };
+		65FD735121BAA7B500FFDBE8 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD735021BAA7B500FFDBE8 /* EncryptionTools.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6552B4AB21B0C6A00026EFD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6552B48A21B0C69F0026EFD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6552B49121B0C69F0026EFD5;
+			remoteInfo = RsaDemo;
+		};
+		6552B4B621B0C6A00026EFD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6552B48A21B0C69F0026EFD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6552B49121B0C69F0026EFD5;
+			remoteInfo = RsaDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6552B49221B0C69F0026EFD5 /* RsaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RsaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6552B49521B0C69F0026EFD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6552B49621B0C69F0026EFD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6552B49821B0C69F0026EFD5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6552B49921B0C69F0026EFD5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6552B49C21B0C69F0026EFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6552B49E21B0C6A00026EFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6552B4A121B0C6A00026EFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6552B4A321B0C6A00026EFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6552B4A421B0C6A00026EFD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6552B4AA21B0C6A00026EFD5 /* RsaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RsaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6552B4AE21B0C6A00026EFD5 /* RsaDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RsaDemoTests.m; sourceTree = "<group>"; };
+		6552B4B021B0C6A00026EFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6552B4B521B0C6A00026EFD5 /* RsaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RsaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6552B4B921B0C6A00026EFD5 /* RsaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RsaDemoUITests.m; sourceTree = "<group>"; };
+		6552B4BB21B0C6A00026EFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6552B4C821B0CEFE0026EFD5 /* RSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACryptor.h; sourceTree = "<group>"; };
+		6552B4C921B0CEFE0026EFD5 /* RSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSACryptor.m; sourceTree = "<group>"; };
+		6552B4CB21B0CF0C0026EFD5 /* TeeMo.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TeeMo.p12; sourceTree = "<group>"; };
+		6552B4CC21B0CF0C0026EFD5 /* reqTeeMo.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = reqTeeMo.der; sourceTree = "<group>"; };
+		65FD734F21BAA7B500FFDBE8 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
+		65FD735021BAA7B500FFDBE8 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6552B48F21B0C69F0026EFD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6552B4A721B0C6A00026EFD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6552B4B221B0C6A00026EFD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6552B48921B0C69F0026EFD5 = {
+			isa = PBXGroup;
+			children = (
+				6552B49421B0C69F0026EFD5 /* RsaDemo */,
+				6552B4AD21B0C6A00026EFD5 /* RsaDemoTests */,
+				6552B4B821B0C6A00026EFD5 /* RsaDemoUITests */,
+				6552B49321B0C69F0026EFD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6552B49321B0C69F0026EFD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6552B49221B0C69F0026EFD5 /* RsaDemo.app */,
+				6552B4AA21B0C6A00026EFD5 /* RsaDemoTests.xctest */,
+				6552B4B521B0C6A00026EFD5 /* RsaDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6552B49421B0C69F0026EFD5 /* RsaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				65FD734E21BAA7B500FFDBE8 /* Cipher */,
+				6552B4C721B0CEFE0026EFD5 /* Cipher-RSA */,
+				6552B49521B0C69F0026EFD5 /* AppDelegate.h */,
+				6552B49621B0C69F0026EFD5 /* AppDelegate.m */,
+				6552B49821B0C69F0026EFD5 /* ViewController.h */,
+				6552B49921B0C69F0026EFD5 /* ViewController.m */,
+				6552B49B21B0C69F0026EFD5 /* Main.storyboard */,
+				6552B49E21B0C6A00026EFD5 /* Assets.xcassets */,
+				6552B4A021B0C6A00026EFD5 /* LaunchScreen.storyboard */,
+				6552B4A321B0C6A00026EFD5 /* Info.plist */,
+				6552B4A421B0C6A00026EFD5 /* main.m */,
+				6552B4CC21B0CF0C0026EFD5 /* reqTeeMo.der */,
+				6552B4CB21B0CF0C0026EFD5 /* TeeMo.p12 */,
+			);
+			path = RsaDemo;
+			sourceTree = "<group>";
+		};
+		6552B4AD21B0C6A00026EFD5 /* RsaDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6552B4AE21B0C6A00026EFD5 /* RsaDemoTests.m */,
+				6552B4B021B0C6A00026EFD5 /* Info.plist */,
+			);
+			path = RsaDemoTests;
+			sourceTree = "<group>";
+		};
+		6552B4B821B0C6A00026EFD5 /* RsaDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6552B4B921B0C6A00026EFD5 /* RsaDemoUITests.m */,
+				6552B4BB21B0C6A00026EFD5 /* Info.plist */,
+			);
+			path = RsaDemoUITests;
+			sourceTree = "<group>";
+		};
+		6552B4C721B0CEFE0026EFD5 /* Cipher-RSA */ = {
+			isa = PBXGroup;
+			children = (
+				6552B4C821B0CEFE0026EFD5 /* RSACryptor.h */,
+				6552B4C921B0CEFE0026EFD5 /* RSACryptor.m */,
+			);
+			path = "Cipher-RSA";
+			sourceTree = "<group>";
+		};
+		65FD734E21BAA7B500FFDBE8 /* Cipher */ = {
+			isa = PBXGroup;
+			children = (
+				65FD734F21BAA7B500FFDBE8 /* EncryptionTools.h */,
+				65FD735021BAA7B500FFDBE8 /* EncryptionTools.m */,
+			);
+			path = Cipher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6552B49121B0C69F0026EFD5 /* RsaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6552B4BE21B0C6A00026EFD5 /* Build configuration list for PBXNativeTarget "RsaDemo" */;
+			buildPhases = (
+				6552B48E21B0C69F0026EFD5 /* Sources */,
+				6552B48F21B0C69F0026EFD5 /* Frameworks */,
+				6552B49021B0C69F0026EFD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RsaDemo;
+			productName = RsaDemo;
+			productReference = 6552B49221B0C69F0026EFD5 /* RsaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6552B4A921B0C6A00026EFD5 /* RsaDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6552B4C121B0C6A00026EFD5 /* Build configuration list for PBXNativeTarget "RsaDemoTests" */;
+			buildPhases = (
+				6552B4A621B0C6A00026EFD5 /* Sources */,
+				6552B4A721B0C6A00026EFD5 /* Frameworks */,
+				6552B4A821B0C6A00026EFD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6552B4AC21B0C6A00026EFD5 /* PBXTargetDependency */,
+			);
+			name = RsaDemoTests;
+			productName = RsaDemoTests;
+			productReference = 6552B4AA21B0C6A00026EFD5 /* RsaDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6552B4B421B0C6A00026EFD5 /* RsaDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6552B4C421B0C6A00026EFD5 /* Build configuration list for PBXNativeTarget "RsaDemoUITests" */;
+			buildPhases = (
+				6552B4B121B0C6A00026EFD5 /* Sources */,
+				6552B4B221B0C6A00026EFD5 /* Frameworks */,
+				6552B4B321B0C6A00026EFD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6552B4B721B0C6A00026EFD5 /* PBXTargetDependency */,
+			);
+			name = RsaDemoUITests;
+			productName = RsaDemoUITests;
+			productReference = 6552B4B521B0C6A00026EFD5 /* RsaDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6552B48A21B0C69F0026EFD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = TeeMo;
+				TargetAttributes = {
+					6552B49121B0C69F0026EFD5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					6552B4A921B0C6A00026EFD5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6552B49121B0C69F0026EFD5;
+					};
+					6552B4B421B0C6A00026EFD5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6552B49121B0C69F0026EFD5;
+					};
+				};
+			};
+			buildConfigurationList = 6552B48D21B0C69F0026EFD5 /* Build configuration list for PBXProject "RsaDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6552B48921B0C69F0026EFD5;
+			productRefGroup = 6552B49321B0C69F0026EFD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6552B49121B0C69F0026EFD5 /* RsaDemo */,
+				6552B4A921B0C6A00026EFD5 /* RsaDemoTests */,
+				6552B4B421B0C6A00026EFD5 /* RsaDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6552B49021B0C69F0026EFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6552B4CF21B0D08D0026EFD5 /* reqTeeMo.der in Resources */,
+				6552B4D021B0D08D0026EFD5 /* TeeMo.p12 in Resources */,
+				6552B4CD21B0CF8B0026EFD5 /* RSACryptor.h in Resources */,
+				6552B4CE21B0CF8B0026EFD5 /* RSACryptor.m in Resources */,
+				6552B4A221B0C6A00026EFD5 /* LaunchScreen.storyboard in Resources */,
+				6552B49F21B0C6A00026EFD5 /* Assets.xcassets in Resources */,
+				6552B49D21B0C69F0026EFD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6552B4A821B0C6A00026EFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6552B4B321B0C6A00026EFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6552B48E21B0C69F0026EFD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6552B4CA21B0CEFE0026EFD5 /* RSACryptor.m in Sources */,
+				6552B49A21B0C69F0026EFD5 /* ViewController.m in Sources */,
+				65FD735121BAA7B500FFDBE8 /* EncryptionTools.m in Sources */,
+				6552B4A521B0C6A00026EFD5 /* main.m in Sources */,
+				6552B49721B0C69F0026EFD5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6552B4A621B0C6A00026EFD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6552B4AF21B0C6A00026EFD5 /* RsaDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6552B4B121B0C6A00026EFD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6552B4BA21B0C6A00026EFD5 /* RsaDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6552B4AC21B0C6A00026EFD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6552B49121B0C69F0026EFD5 /* RsaDemo */;
+			targetProxy = 6552B4AB21B0C6A00026EFD5 /* PBXContainerItemProxy */;
+		};
+		6552B4B721B0C6A00026EFD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6552B49121B0C69F0026EFD5 /* RsaDemo */;
+			targetProxy = 6552B4B621B0C6A00026EFD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6552B49B21B0C69F0026EFD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6552B49C21B0C69F0026EFD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6552B4A021B0C6A00026EFD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6552B4A121B0C6A00026EFD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6552B4BC21B0C6A00026EFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6552B4BD21B0C6A00026EFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6552B4BF21B0C6A00026EFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RsaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.RsaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6552B4C021B0C6A00026EFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RsaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.RsaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6552B4C221B0C6A00026EFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RsaDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.RsaDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RsaDemo.app/RsaDemo";
+			};
+			name = Debug;
+		};
+		6552B4C321B0C6A00026EFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RsaDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.RsaDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RsaDemo.app/RsaDemo";
+			};
+			name = Release;
+		};
+		6552B4C521B0C6A00026EFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RsaDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.RsaDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RsaDemo;
+			};
+			name = Debug;
+		};
+		6552B4C621B0C6A00026EFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RsaDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.RsaDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RsaDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6552B48D21B0C69F0026EFD5 /* Build configuration list for PBXProject "RsaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6552B4BC21B0C6A00026EFD5 /* Debug */,
+				6552B4BD21B0C6A00026EFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6552B4BE21B0C6A00026EFD5 /* Build configuration list for PBXNativeTarget "RsaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6552B4BF21B0C6A00026EFD5 /* Debug */,
+				6552B4C021B0C6A00026EFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6552B4C121B0C6A00026EFD5 /* Build configuration list for PBXNativeTarget "RsaDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6552B4C221B0C6A00026EFD5 /* Debug */,
+				6552B4C321B0C6A00026EFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6552B4C421B0C6A00026EFD5 /* Build configuration list for PBXNativeTarget "RsaDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6552B4C521B0C6A00026EFD5 /* Debug */,
+				6552B4C621B0C6A00026EFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6552B48A21B0C69F0026EFD5 /* Project object */;
+}
